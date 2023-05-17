@@ -3,15 +3,15 @@ import { useState } from 'react'
 import './App.css'
 
 function Login() {
-
+  const formData = {}
 
 
   return(
-    <div class="background">
-      <div>
+    <div className="background">
+      <div className="login-form">
         <form>
-          <input type="email" value={formData.email} name='email' onChange={e => handleChange(e)} placeholder="EMAIL" /><br />
-          <input type="password" value={formData.password} name='password' onChange={e => handleChange(e)} placeholder="PASSWORD" /><br />
+          <input type="email" value='email' name='email' placeholder="EMAIL" /><br />
+          <input type="password" value='password' name='password' placeholder="PASSWORD" /><br />
           <div>
             <input type="submit" />
             <button onClick={() => { navigate('/home') }}>Sign Up</button>
