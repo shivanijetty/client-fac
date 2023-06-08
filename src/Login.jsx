@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import './App.css'
+import './App.scss'
 
 function Login() {
   const [users, setUsers] = useState([])
@@ -11,7 +11,7 @@ function Login() {
 
 
   return(
-    <div>
+    <div className="">
       <div className="background">
         <div className="login-form">
           <form>

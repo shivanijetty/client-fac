@@ -1,0 +1,42 @@
+$board-bg-color: #0079bf;
+$navbar-app-bg-color: aqua;
+$navbar-board-bg-color: aqua;
+$gap: 10px;
+
+body {
+  background-image: url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  line-height: 1.3em;
+  font-size: 14px;
+}
+
+.background {
+  display: flex;
+}
+.trello-master {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 40px 50px 1fr;
+  background-color: $board-bg-color;
+
+  .navbar {
+    padding-left: $gap;
+    display: flex;
+    align-items: center;
+    
+    &.app {
+      font-size: 1.5rem;
+      background-color: $navbar-app-bg-color;
+    }
+
+    &.board {
+      background-color: $navbar-board-bg-color;
+
+    }
+  }
+}
