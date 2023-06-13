@@ -11,7 +11,7 @@ function Login() {
 
 
   return(
-    <div className="">
+    <div className="big-login">
       <div className="background">
         <div className="login-form">
           <form>

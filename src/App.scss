@@ -1,18 +1,32 @@
 $board-bg-color: #0079bf;
 $navbar-app-bg-color: aqua;
 $navbar-board-bg-color: aqua;
+$list-bg-color: #ebecf0;
 $gap: 10px;
+$column-header-height: 36px;
+$column-footer-height: 36px;
+$column-border-radius: 5px;
+$card-border-radius: 3px;
+
 
 body {
+  width: 100vw;
+  height: 100%;
+  // justify-content: center;
+  line-height: 1.3em;
+  font-size: 14px;
+}
+
+.big-login {
+  width: 100vw;
+  height: 100vh;
   background-image: url(./images/background.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  width: 100%;
-  height: 100%;
+  display: flex;
   justify-content: center;
-  line-height: 1.3em;
-  font-size: 14px;
+  align-items: center;
 }
 
 .background {
@@ -20,6 +34,7 @@ body {
 }
 .trello-master {
   height: 100vh;
+  width: 100vw;
   display: grid;
   grid-template-rows: 40px 50px 1fr;
   background-color: $board-bg-color;
@@ -35,8 +50,66 @@ body {
     }
 
     &.board {
+      font-size: 1.1rem;
       background-color: $navbar-board-bg-color;
+    }
+  }
 
+  .board-columns {
+    display: flex;
+    overflow-x: auto;
+
+    .column {
+      flex: 0 0 auto;
+      width: 300px;
+      height: calc(100% - #{$gap});
+      margin-left: $gap;
+      
+
+      > * {
+        background-color: $list-bg-color;
+        color: #333;
+        padding: 0 8px;
+      }
+
+      header {
+        padding-left: 15px;
+        height: 36px;
+        line-height: $column-header-height;
+        font-size: $column-header-height;
+        font-weight: bold;
+        border-top-left-radius: $column-border-radius;
+        border-top-right-radius: $column-border-radius;
+      }
+
+      footer {
+        padding-left: 15px;
+        height: $column-footer-height;
+        line-height: $column-footer-height;
+        font-size: 16px;
+        font-weight: bold;
+        border-bottom-left-radius: $column-border-radius;
+        border-bottom-right-radius: $column-border-radius;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        max-height: calc(100% - #{$column-header-height} - #{$column-footer-height});
+        overflow-y: auto;
+
+        li {
+          background-color: white;
+          padding: $gap;
+          border-radius: $card-border-radius;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+          &:not(:last-child) {
+            margin-bottom: $gap;
+          }
+
+        }
+      }
     }
   }
 }
