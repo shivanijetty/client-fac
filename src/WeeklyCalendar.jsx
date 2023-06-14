@@ -12,75 +12,75 @@ function WeeklyCalendar() {
       <div className="column">
         <header>Monday</header>
         <ul>
-          <li>first</li>
-          <li>second</li>
+          <li>First</li>
+          <li>Second</li>
         </ul>
-        <footer>Add a commitment</footer>
+        <footer>+ Add a commitment</footer>
       </div>
 
       <div className="column">
         <header>Tuesday</header>
         <ul>
-          <li>first</li>
-          <li>second</li>
-          <li>third</li>
-          <li>fourth</li>
-          <li>fifth</li>
-          <li>sixth</li>
-          <li>seventh</li>
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+          <li>Fourth</li>
+          <li>Fifth</li>
+          <li>Sixth</li>
+          <li>Seventh</li>
         </ul>
-        <footer>Add a commitment</footer>
+        <footer>+ Add a commitment</footer>
       </div>
 
       <div className="column">
         <header>Wednesday</header>
         <ul>
-          <li>first</li>
-          <li>second</li>
+          <li>First</li>
+          <li>Second</li>
         </ul>
-        <footer>Add a commitment</footer>
+        <footer>+ Add a commitment</footer>
       </div>
 
       <div className="column">
         <header>Thursday</header>
         <ul>
-          <li>first</li>
-          <li>second</li>
+          <li>First</li>
+          <li>Second</li>
         </ul>
-        <footer>Add a commitment</footer>
+        <footer>+ Add a commitment</footer>
       </div>
 
       <div className="column">
         <header>Friday</header>
         <ul>
-          <li>first</li>
-          <li>second</li>
-          <li>third</li>
-          <li>fourth</li>
-          <li>fifth</li>
-          <li>sixth</li>
-          <li>seventh</li>
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+          <li>Fourth</li>
+          <li>Fifth</li>
+          <li>Sixth</li>
+          <li>Seventh</li>
         </ul>
-        <footer>Add a commitment</footer>
+        <footer>+ Add a commitment</footer>
       </div>
       <div className="column">
         <header>Saturday</header>
         <ul>
-          <li>first</li>
-          <li>second</li>
-          <li>third</li>
-          <li>fourth</li>
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+          <li>Fourth</li>
         </ul>
-        <footer>Add a commitment</footer>
+        <footer>+ Add a commitment</footer>
       </div>
       <div className="column">
         <header>Sunday</header>
         <ul>
-          <li>first</li>
-          <li>second</li>
-          <li>third</li>
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
         </ul>
-        <footer>Add a commitment</footer>
+        <footer>+ Add a commitment</footer>
       </div>        
 
       </div>
