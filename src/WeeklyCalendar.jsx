@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import './App.scss'
+// import './App.scss'
 
 function WeeklyCalendar() {
   
@@ -8,7 +8,7 @@ function WeeklyCalendar() {
     <div className="trello-master">
       <nav className="navbar app"> App Bar </nav>
       <nav className="navbar board"> Board Bar </nav>
-      <div className="board-comlumns">        
+      <div className="board-columns">
       <div className="column">
         <header>Monday</header>
         <ul>
@@ -23,6 +23,11 @@ function WeeklyCalendar() {
         <ul>
           <li>first</li>
           <li>second</li>
+          <li>third</li>
+          <li>fourth</li>
+          <li>fifth</li>
+          <li>sixth</li>
+          <li>seventh</li>
         </ul>
         <footer>Add a commitment</footer>
       </div>
@@ -50,9 +55,33 @@ function WeeklyCalendar() {
         <ul>
           <li>first</li>
           <li>second</li>
+          <li>third</li>
+          <li>fourth</li>
+          <li>fifth</li>
+          <li>sixth</li>
+          <li>seventh</li>
         </ul>
         <footer>Add a commitment</footer>
       </div>
+      <div className="column">
+        <header>Saturday</header>
+        <ul>
+          <li>first</li>
+          <li>second</li>
+          <li>third</li>
+          <li>fourth</li>
+        </ul>
+        <footer>Add a commitment</footer>
+      </div>
+      <div className="column">
+        <header>Sunday</header>
+        <ul>
+          <li>first</li>
+          <li>second</li>
+          <li>third</li>
+        </ul>
+        <footer>Add a commitment</footer>
+      </div>        
 
       </div>
     </div>
