@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import './AppBar.scss';
 
 function AppBar() {
 
