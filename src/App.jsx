@@ -9,7 +9,7 @@ import './App.scss'
 function App() {
 
 
-  return (  
+  return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />}/>

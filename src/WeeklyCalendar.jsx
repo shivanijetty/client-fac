@@ -1,13 +1,15 @@
 import React from 'react'
 import { useState } from 'react'
+import AppBar from './components/AppBar/AppBar'
+import BoardBar from './components/BoardBar/BoardBar'
 // import './App.scss'
 
 function WeeklyCalendar() {
   
   return(
     <div className="trello-master">
-      <nav className="navbar app"> App Bar </nav>
-      <nav className="navbar board"> Board Bar </nav>
+      <AppBar />
+      <BoardBar />
       <div className="board-columns">
       <div className="column">
         <header>Monday</header>

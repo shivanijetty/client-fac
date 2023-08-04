@@ -46,12 +46,18 @@ body {
     display: flex;
     align-items: center;
     
-    &.app {
+    .navbar-app {
+      padding-left: $gap;
+      display: flex;
+      align-items: center;
       font-size: 1.5rem;
       background-color: $navbar-app-bg-color;
     }
 
-    &.board {
+    .navbar-board {
+      padding-left: $gap;
+      display: flex;
+      align-items: center;
       font-size: 1.1rem;
       background-color: $navbar-board-bg-color;
     }
