@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './BoardContent.scss';
 import Column from '../Column/Column';
 import { MockData } from '../../actions/MockData';
+import { Container, Draggable } from 'react-smooth-dnd';
 import _ from 'lodash';
 
 function BoardContent() {
@@ -16,6 +17,10 @@ function BoardContent() {
     }
   },[])
 
+  const onColumnDrop = (dropResult) => {
+    console.log('weeeee', dropResult)
+  }
+
   if (_.isEmpty(board)) {
     return (
       <>
@@ -28,17 +33,24 @@ function BoardContent() {
   return (
     <>
       <div className="board-columns">
-        { columns && columns.length > 0 && columns.map((column, index) => {
-          return (
-            <Column 
-              key={column.id} 
-              column={column}
-            />
-          )
-        }) }
-        
-        
-
+        <Container
+        orientation="horizontal"
+        onDrop={onColumnDrop}
+        dragHandleSelector=".column-drag-handle"
+        dropPlaceholder={{
+          animationDuration: 150,
+          showOnTop: true,
+          className: 'tasks-drop-preview'
+        }}
+        >
+          { columns && columns.length > 0 && columns.map((column, index) => {
+            return (
+              <Draggable key={column.id} >
+                <Column column={column} />
+              </Draggable>
+            )
+          })}
+        </Container>
       </div>
     </>
   )
