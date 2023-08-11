@@ -1,10 +1,12 @@
 import './Tasks.scss';
 
-function Tasks() {
+function Tasks({ task }) {
 
   return (
     <>
-      <li className="task-item">Something</li>
+      <li className="task-item" draggable>
+        {task.title}
+      </li>
     </>
   )
 }
