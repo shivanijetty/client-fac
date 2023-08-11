@@ -1,12 +1,12 @@
 import './Column.scss';
 import Tasks from '../Tasks/Tasks';
 
-function Column() {
+function Column({ column }) {
 
   return (
     <>
       <div className="column">
-        <header>Friday</header>
+        <header>{column.title}</header>
         <ul className="tasks-list">
           <Tasks />
           <Tasks />
