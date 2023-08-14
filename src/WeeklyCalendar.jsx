@@ -12,6 +12,7 @@ function WeeklyCalendar() {
       <AppBar />
       <BoardBar />
       <BoardContent />
+
     </div>
   )
 }
