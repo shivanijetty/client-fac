@@ -12,14 +12,22 @@ function Login() {
 
   return(
     <div className="big-login">
-      <div className="background">
+      <div className="wrapper">
         <div className="login-form">
+          <h2>Login</h2>
           <form>
-            <input type="email" value='email' name='email' placeholder="EMAIL" /><br />
-            <input type="password" value='password' name='password' placeholder="PASSWORD" /><br />
-            <div>
-              <input type="submit" />
-              <button onClick={() => { navigate('/home') }}>Sign Up</button>
+            <input type="email" value='email' name='email' /><br />
+            <input type="password" value='password' name='password' /><br />
+            <div className="remember">
+              <label>
+                <input type="checkbox" />Remember me
+              </label>
+            </div>
+            <button type="submit" className="btn">Login</button>
+            <div className="register">
+              <p>Don't have an account?
+                <a className="register-link">  Register</a>
+              </p>              
             </div>
           </form>
         </div>
