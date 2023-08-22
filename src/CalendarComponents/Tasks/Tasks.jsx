@@ -4,9 +4,7 @@ function Tasks({ task }) {
 
   return (
     <>
-      <li className="task-item" draggable>
-        {task.title}
-      </li>
+      <li className="task-item">{task.title}</li>
     </>
   )
 }

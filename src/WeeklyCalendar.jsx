@@ -3,6 +3,7 @@ import { useState } from 'react'
 import AppBar from './CalendarComponents/AppBar/AppBar'
 import BoardBar from './CalendarComponents/BoardBar/BoardBar'
 import BoardContent from './CalendarComponents/BoardContent/BoardContent'
+// import BackgroundCalendar from './images/bg-calendar.jpg'
 import './App.scss'
 
 function WeeklyCalendar() {
@@ -12,6 +13,7 @@ function WeeklyCalendar() {
       <AppBar />
       <BoardBar />
       <BoardContent />
+
     </div>
   )
 }
