@@ -16,8 +16,18 @@ function Login() {
         <div className="login-form">
           <h2>Login</h2>
           <form>
-            <input type="email" value='email' name='email' /><br />
-            <input type="password" value='password' name='password' /><br />
+            <div className='input-box'>
+              <span className="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="Email" />
+              <label>Email</label>
+            </div>
+            
+            <div className='input-box'>
+              <span className="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="Password" />
+              <label>Password</label>
+            </div>
+
             <div className="remember">
               <label>
                 <input type="checkbox" />Remember me
