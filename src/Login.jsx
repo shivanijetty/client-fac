@@ -9,6 +9,10 @@ function Login() {
     password: ''
   })
 
+  const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.value})
+  }
+
 
   return(
     <div className="big-login">
@@ -17,14 +21,14 @@ function Login() {
           <h2>Login</h2>
           <form>
             <div className='input-box'>
-              <span className="icon"><ion-icon name="mail"></ion-icon></span>
-              <input type="Email" />
+              <span className='icon'><ion-icon name="mail"></ion-icon></span>
+              <input type="Email" name='email' value={formData.email} onChange={e => handleChange(e)} required />
               <label>Email</label>
             </div>
             
             <div className='input-box'>
-              <span className="icon"><ion-icon name="lock-closed"></ion-icon></span>
-              <input type="Password" />
+              <span className='icon'><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="Password" name='password' value={formData.password} onChange={e => handleChange(e)} required />
               <label>Password</label>
             </div>
 
