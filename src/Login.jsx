@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect  } from 'react'
 import { useNavigate } from 'react-router-dom'
-import './Login.scss'
+import './LogReg.scss'
 // import './App.scss'
 
 function Login( {handleToggle} ) {

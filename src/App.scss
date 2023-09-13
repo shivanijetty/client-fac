@@ -10,6 +10,22 @@ body {
   font-size: 14px;
 }
 
+.background {
+  display: flex;
+}
+.trello-master {
+  height: 100vh;
+  // width: 100vw;
+  display: grid;
+  grid-template-rows: 40px 50px 1fr;
+  background: url(images/bg-calendar.jpg) no-repeat;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .big-login {
   width: 100vw;
   height: 100vh;
@@ -20,6 +36,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  #reg-wrapper {
+    height: 520px; 
+  }
 
   .wrapper {
     position: relative;
@@ -33,8 +53,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    // atributes below were added after seperating components and creating handleToggle
+    animation: fadeIn 0.3s;  
 
-    .login-form {
+    .log-reg-form {
       width: 100%;
       padding: 40px;
 
@@ -93,7 +115,7 @@ body {
         }
       }
 
-      .remember {
+      .remember-agree {
         font-size: 1.01em;
         color: #ffffff;
         font-weight: 500;
@@ -122,16 +144,17 @@ body {
         cursor: pointer;
       }
 
-      .register {
+      .log-reg {
         font-size: .95em;
         color:#162938;
         text-align: center;
         font-weight: 500;
         margin: 25px 0 10px;
 
-        p a {
+        .link {
           text-decoration: none;
           font-weight: 600;
+          color: #646cff;
         }
         p a:hover {
           text-decoration: underline;
@@ -142,13 +165,4 @@ body {
   }
 }
 
-.background {
-  display: flex;
-}
-.trello-master {
-  height: 100vh;
-  // width: 100vw;
-  display: grid;
-  grid-template-rows: 40px 50px 1fr;
-  background: url(images/bg-calendar.jpg) no-repeat;
-}
+

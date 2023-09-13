@@ -1,22 +1,21 @@
 import { useState } from 'react';
 import Login from './Login';
 import Register from './Register';
-import './Login.scss'
+import './LogReg.scss'
 import React from 'react'
-import './App.scss'
 
 function Home() {
-  const [renderReg, setRenderReg] = useState(false)
+  const [showReg, setShowReg] = useState(false)
 
   const handleToggle = () => {
-    setRenderReg(!renderReg)
+    setShowReg(!showReg)
   }
   
 
   return(
     <div className="big-login">
       <div>
-        {renderReg ? <Register handleToggle={handleToggle} /> : <Login handleToggle={handleToggle} />}
+        {showReg ? <Register handleToggle={handleToggle} /> : <Login handleToggle={handleToggle} />}
       </div>
     </div>
   )
