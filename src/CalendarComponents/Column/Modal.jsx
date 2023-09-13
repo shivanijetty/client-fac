@@ -6,13 +6,13 @@ function Modal({setShowAddModal}) {
   }
 
   return (
-    <div className='modal-container'>
-      <div classname='text-box'>
-        <input type='text' placeholder='Enter new commitment here...'/>
+    <div className='text-box'>
+      <input type='text' placeholder='Enter new commitment here...'/>
+      <div className='buttons'>
         <button className='add-btn'>Add</button>
-        <button className='close-btn' onClick={closeModal}><ion-icon name="close"></ion-icon></button>
+        <button className='close-btn' onClick={closeModal}><ion-icon name="close-outline"></ion-icon></button>
+        {/*  */}
       </div>
-
     </div>
   )
 }
