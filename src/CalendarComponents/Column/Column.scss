@@ -27,6 +27,10 @@
     line-height: $column-footer-height;
     border-bottom-left-radius: $column-border-radius;
     border-bottom-right-radius: $column-border-radius;
+    
+  }
+  footer:hover {
+    cursor: pointer;
   }
 
   ul.tasks-list {

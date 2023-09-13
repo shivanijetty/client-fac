@@ -1,17 +1,24 @@
 import { useState } from 'react'
-import "./Login.scss";
+import { useNavigate } from 'react-router-dom';
+import "./LogReg.scss";
+// import Home from './Home';
 
 function Register({handleToggle}) {
-  const [username, setUsername] = useState([])
   const [formData, setFormData] = useState({
     email: '',
-    password: ''
+    password: '',
+    username: ''
   })
   // const navigate = useNavigate()
 
-
   const handleChange = (e) => {
     setFormData({...formData, [e.target.name]: e.target.value})
+  }
+
+  const handleAlert = () => {
+    window.location.reload()
+    alert('Success! Now log in to get started!✨');
+    // navigate('/')
   }
   
   
@@ -22,7 +29,7 @@ function Register({handleToggle}) {
     <form>
       <div className='input-box'>
         <span className='icon'><ion-icon name="person"></ion-icon></span>
-        <input type="text" name='username' value={formData.email} onChange={e => handleChange(e)} required />
+        <input type="text" name='username' value={formData.username} onChange={e => handleChange(e)} required />
         <label>Username</label>
       </div>
 
@@ -43,10 +50,10 @@ function Register({handleToggle}) {
           <input type="checkbox" />I agree to the Terms & Conditions
         </label>
       </div>
-      <button type="submit" className="btn">Register</button>
+      <button type="submit" className="btn" onClick={handleAlert}>Register</button>
       <div className="log-reg">
         <p>Already have an account?
-          <a className="link" onClick={handleToggle} >  Login</a>
+          <a className="link" onClick={handleToggle}>  Login</a>
         </p>              
       </div>
     </form>
