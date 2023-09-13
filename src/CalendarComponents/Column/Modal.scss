@@ -1,1 +1,42 @@
 @import '../../settings';
+
+.text-box {
+  padding: 10px;
+  border-bottom-left-radius: $column-border-radius;
+  border-bottom-right-radius: $column-border-radius;
+}
+
+.buttons {
+  padding: $gap 0 0 0;
+  display:flex;
+  // margin-bottom: $gap;
+  // justify-content: space-between;
+  align-items: center;
+  
+  .add-btn {
+    color: #ffffff;
+    background-color: cornflowerblue;
+  }
+
+  .close-btn {
+    background-color: transparent;
+    padding: 5px 0 0 20px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    color: #44546f;
+   
+  }
+}
+
+input {
+  background-color: white;
+  width: 93%;
+  padding: 0 10px;
+  text-align: left;
+  border: none;
+  border-radius: $card-border-radius;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  max-height: 162px;
+  min-height: 54px;
+}
