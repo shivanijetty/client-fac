@@ -1,9 +1,16 @@
 @import '../../settings';
 
+
+// @keyframes fadeIn {
+//   0% { opacity: 0; }
+//   100% { opacity: 1; }
+// }
+
 .text-box {
   padding: 10px;
   border-bottom-left-radius: $column-border-radius;
   border-bottom-right-radius: $column-border-radius;
+
 }
 
 .buttons {
@@ -16,6 +23,7 @@
   .add-btn {
     color: #ffffff;
     background-color: cornflowerblue;
+    // animation: fadeIn 0.3s;
   }
 
   .close-btn {
@@ -25,18 +33,21 @@
     outline: none;
     border: none;
     color: #44546f;
-   
+    // animation: fadeIn 0.3s;   
   }
 }
 
-input {
+.text-field {
   background-color: white;
   width: 93%;
-  padding: 0 10px;
-  text-align: left;
+  padding: 8px 8px 4px 12px;
+  // text-align: left;
   border: none;
+  outline: none;
   border-radius: $card-border-radius;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  max-height: 162px;
+  // max-height: 162px;
   min-height: 54px;
+  overflow: hidden;
+  overflow-wrap: break-word;
 }

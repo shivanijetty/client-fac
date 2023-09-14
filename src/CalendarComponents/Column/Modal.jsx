@@ -7,7 +7,7 @@ function Modal({setShowAddModal}) {
 
   return (
     <div className='text-box'>
-      <input type='text' placeholder='Enter new commitment here...'/>
+      <textarea className='text-field' placeholder='Enter new commitment here...'></textarea>
       <div className='buttons'>
         <button className='add-btn'>Add</button>
         <button className='close-btn' onClick={closeModal}><ion-icon name="close-outline"></ion-icon></button>

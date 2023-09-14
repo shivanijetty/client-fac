@@ -43,7 +43,7 @@ function Login( {handleToggle} ) {
         <button type="submit" className="btn" onClick={() => {navigate('/weeklycalendar')}} >Login</button>
         <div className="log-reg">
           <p>Don't have an account?
-            <a className="register-link" onClick={handleToggle} >  Register</a>
+            <a className="link" onClick={handleToggle} >  Register</a>
           </p>              
         </div>
       </form>

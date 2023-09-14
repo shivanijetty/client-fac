@@ -1,5 +1,11 @@
 @import '../../settings';
 
+
+// @keyframes fadeIn {
+//   0% { opacity: 0; }
+//   100% { opacity: 1; }
+// }
+
 .column {
   flex: 0 0 auto;
   width: 300px;
@@ -27,7 +33,7 @@
     line-height: $column-footer-height;
     border-bottom-left-radius: $column-border-radius;
     border-bottom-right-radius: $column-border-radius;
-    
+    // animation: fadeIn 0.1s;   
   }
   footer:hover {
     cursor: pointer;

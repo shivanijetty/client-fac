@@ -16,7 +16,7 @@ function Column({ column }) {
       <div className="column">
         <header>{column.title}</header>
         <ul className="tasks-list">
-          { tasks && tasks.length > 0 && tasks.map((task, index) => {
+          { tasks && tasks.length > 0 && tasks.map((task) => {
             return (
               <Tasks 
                 key={task.id}
@@ -25,7 +25,13 @@ function Column({ column }) {
             )
           }) }
         </ul>        
-        { showAddModal ? <Modal setShowAddModal={setShowAddModal} /> : <footer onClick={openModal}><ion-icon name="add"></ion-icon> Add a commitment</footer> }
+        { 
+          showAddModal ? 
+            <Modal setShowAddModal={setShowAddModal} /> 
+          : <footer onClick={openModal}><ion-icon name="add">
+              </ion-icon> Add a commitment
+            </footer> 
+        }
     </div>
     </>
   )
