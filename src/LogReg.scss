@@ -22,8 +22,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 0.3s; 
 
-  .login-form {
+  .log-reg-form {
     width: 100%;
     padding: 40px;
 
@@ -62,7 +63,7 @@
         color: #162938;
         z-index: 1;
         pointer-events: none;
-        transition: .3s;
+        transition: .5s;
       }
 
       input:focus~label,
@@ -82,7 +83,7 @@
       }
     }
 
-    .remember {
+    .remember-agree {
       font-size: 1.01em;
       color: #ffffff;
       font-weight: 500;
@@ -110,19 +111,24 @@
       color: #ffffff;
       cursor: pointer;
     }
+    .btn:hover {
+      color: #162938;
+      background-color: #ffffff;
+    }
 
-    .register {
+    .log-reg {
       font-size: .95em;
       color:#162938;
       text-align: center;
       font-weight: 500;
       margin: 25px 0 10px;
 
-      p a {
+      .link {
         text-decoration: none;
         font-weight: 600;
+        color: #646cff;
       }
-      p a:hover {
+      .link:hover {
         text-decoration: underline;
         cursor: pointer;
       }

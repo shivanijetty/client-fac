@@ -5,7 +5,6 @@ body {
   width: 100vw;
   height: 100%;
   -webkit-font-smoothing: antialiased;
-  // justify-content: center;
   line-height: 1.3em;
   font-size: 14px;
 }
@@ -15,15 +14,9 @@ body {
 }
 .trello-master {
   height: 100vh;
-  // width: 100vw;
   display: grid;
   grid-template-rows: 40px 50px 1fr;
   background: url(images/bg-calendar.jpg) no-repeat;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
 }
 
 .big-login {
@@ -36,137 +29,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  #reg-wrapper {
-    height: 520px; 
-  }
-
-  .wrapper {
-    position: relative;
-    width: 400px;
-    height: 440px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    backdrop-filter: blur(7px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // atributes below were added after seperating components and creating handleToggle
-    animation: fadeIn 0.3s;  
-
-    .log-reg-form {
-      width: 100%;
-      padding: 40px;
-
-      h2 {
-        font-size: 3em;
-        color: #162938;
-        text-align: center;
-      }
-
-      .input-box {
-        position: relative;
-        width: 100%;
-        height: 50px;
-        border-bottom: 2px solid #162938;
-        margin: 30px 0;
-        padding: 0 35px 0 5px;
-        box-sizing: border-box;
-
-        .icon {
-          position: absolute;
-          right: 8px;
-          font-size: 1.2em;
-          color: #000000;
-          line-height: 46px;
-          z-index: 2;
-
-        }
-
-        label {
-          position: absolute;
-          top: 30px;
-          left: 5px;
-          transform: translateY(-50%);
-          font-size: 1em;
-          font-weight: 500;
-          color: #162938;
-          z-index: 1;
-          pointer-events: none;
-          transition: .5s;
-        }
-
-        input:focus~label,
-        input:valid~label {
-          top: -7px;
-        }
-
-        input {
-          width: 100%;
-          height: 100%;
-          background: transparent;
-          border: none;
-          outline: none;
-          color: #162938;
-          font-size: 1em;
-          font-weight: 600;
-        }
-      }
-
-      .remember-agree {
-        font-size: 1.01em;
-        color: #ffffff;
-        font-weight: 500;
-        margin: -15px 0 15px;
-
-        input {
-          accent-color: #ffffff;
-          margin-right: 5px;
-          margin: top 10px;
-        }
-        input:hover {
-          cursor: pointer;
-        }
-      }
-
-      .btn {
-        width: 100%;
-        height: 45px;
-        background-color: #162938;
-        border: none;
-        outline: none;
-        border-radius: 6px;
-        font-weight: 500;
-        font-size: 1em;
-        color: #ffffff;
-        cursor: pointer;
-      }
-      .btn:hover {
-        color: #162938;
-        background-color: #ffffff;
-      }
-
-      .log-reg {
-        font-size: .95em;
-        color:#162938;
-        text-align: center;
-        font-weight: 500;
-        margin: 25px 0 10px;
-
-        .link {
-          text-decoration: none;
-          font-weight: 600;
-          color: #646cff;
-        }
-        p a:hover {
-          text-decoration: underline;
-          cursor: pointer;
-        }
-      }
-    }
-  }
 }
 
 
