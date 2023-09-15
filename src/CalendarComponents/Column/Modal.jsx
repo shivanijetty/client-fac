@@ -5,13 +5,14 @@ function Modal({setShowAddModal}) {
     setShowAddModal(false)
   }
 
+  
+
   return (
     <div className='text-box'>
-      <textarea className='text-field' placeholder='Enter new commitment here...'></textarea>
+      <textarea className='text-field' placeholder='Enter new commitment here..z.'></textarea>
       <div className='buttons'>
         <button className='add-btn'>Add</button>
         <button className='close-btn' onClick={closeModal}><ion-icon name="close-outline"></ion-icon></button>
-        {/*  */}
       </div>
     </div>
   )

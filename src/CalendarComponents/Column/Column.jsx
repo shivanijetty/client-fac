@@ -28,8 +28,9 @@ function Column({ column }) {
         { 
           showAddModal ? 
             <Modal setShowAddModal={setShowAddModal} /> 
-          : <footer onClick={openModal}><ion-icon name="add">
-              </ion-icon> Add a commitment
+          : <footer onClick={openModal}>
+              <ion-icon name="add"></ion-icon> 
+              Add a commitment
             </footer> 
         }
     </div>
